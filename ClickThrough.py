@@ -16,7 +16,7 @@ def speech(message):
     (text, color, index) = message.packet.read('sii')
     if (text == ':ct'):
         message.is_blocked = True
-        ext.send_to_client("{l}{h:1446}{i:0}{s:\" ' :ct on ' or ' :ct off '\"}{i:0}{i:1}{i:0}{i:0}")
+        ext.send_to_client("{l}{h:1446}{i:0}{s:\"' :ct on ' or ' :ct off '\"}{i:0}{i:1}{i:0}{i:0}")
     if (text == ':ct on'):
         message.is_blocked = True
         ext.send_to_client("{l}{u:448}{b:true}")
